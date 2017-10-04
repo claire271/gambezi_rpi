@@ -18,17 +18,17 @@ cd ..
 rm -rf libuv-1.13.1
 
 # Build libwebsockets
-wget https://github.com/warmcat/libwebsockets/archive/v2.2-stable.zip
-unzip v2.2-stable.zip
-rm v2.2-stable.zip
-cd libwebsockets-2.2-stable
+wget https://github.com/warmcat/libwebsockets/archive/v2.3-stable.zip
+unzip v2.3-stable.zip
+rm v2.3-stable.zip
+cd libwebsockets-2.3-stable
 mkdir build
 cd build
 cmake .. -DLWS_WITH_LWSWS=1
 make
 sudo make install
 cd ../..
-rm -rf libwebsockets-2.2-stable
+rm -rf libwebsockets-2.3-stable
 
 # Build gambezi
 wget https://github.com/tigerh/gambezi/archive/master.zip
