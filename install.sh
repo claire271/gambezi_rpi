@@ -55,6 +55,3 @@ sudo ln -s /etc/init.d/gambezi.sh /etc/rc5.d/S99gambezi.sh
 
 # Configure libraries
 sudo ldconfig
-
-# Reboot
-sudo reboot
