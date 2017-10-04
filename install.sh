@@ -2,7 +2,7 @@
 
 # Install packages
 sudo apt-get update
-sudo apt-get install automake libtool cmake libssl-dev
+sudo apt-get install -y automake libtool cmake libssl-dev
 
 # Build libuv
 wget https://github.com/libuv/libuv/archive/v1.13.1.zip
