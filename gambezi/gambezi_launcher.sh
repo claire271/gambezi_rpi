@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Utility functions
 logfile="/home/pi/gambezi/gambezi.log"
