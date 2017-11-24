@@ -50,8 +50,9 @@ sudo cp -r lwsws /etc/
 cp -r gambezi /home/pi/
 
 # Install init scripts
-sudo cp gambezi.sh /etc/init.d/
-sudo ln -s /etc/init.d/gambezi.sh /etc/rc5.d/S99gambezi.sh
+sudo cp gambezi.sh /etc/init.d/gambezi
+sudo update-rc.d gambezi defaults
+sudo update-rc.d gambezi enable
 
 # Configure libraries
 sudo ldconfig

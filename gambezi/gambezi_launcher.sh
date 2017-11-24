@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 # Utility functions
 logfile="/home/pi/gambezi/gambezi.log"
@@ -16,14 +16,14 @@ function kill_lwsws {
 	done
 }
 
-# Cleanup here
+# Cleanup functions
 function cleanup {
 	kill_lwsws
 	exit
 }
 trap "cleanup" SIGTERM
 
-# lwsws and other programs
+# Start program
 start_lwsws
 
 # Monitoring
